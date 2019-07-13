@@ -1,4 +1,4 @@
-def makesquare(self, nums):
+def makesquare(nums):
     """
     :type nums: List[int]
     :rtype: bool
@@ -47,3 +47,6 @@ def makesquare(self, nums):
                 sums[i] -= nums[index]
         return False        
     return dfs(0)
+
+nums = [3, 1, 2, 2, 1, 3, 4]
+print(nums, makesquare(nums))
